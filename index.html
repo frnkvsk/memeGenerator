@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Meme Generator</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Meme Generator</h1>
+        <p>Generate spicy memes from any input image</p>
+    </div>
+    <div class="container">        
+        <div class="display">
+            <canvas class="canvas"></canvas>
+        </div>
+        <div class="control">
+            <div class="upload">
+                <input type="text" class="uploadImage" placeholder="Image URL">
+                <button class="btn uploadButton">Upload Your Image</button>
+            </div>
+            <div class="inputs">
+                <input type="text" class="input topText" placeholder="Top Text">
+                <input type="color" class="input-top-color" value="#000000">
+            </div>
+            <div class="inputs">
+                <input type="text" class="input bottomText" placeholder="Bottom Text">
+                <input type="color" class="input-bottom-color" value="#000000">
+            </div>            
+            <div class="buttons">
+                <button class="btn addText">Add Text</button>
+                <a class="btn createMeme" download="myImage.jpg" href="" onclick="download(this)">Create Meme</a>
+            </div>            
+        </div>
+    </div>
+
+    <script src="app.js" async></script>
+</body>
+</html>
