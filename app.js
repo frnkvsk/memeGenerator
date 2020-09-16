@@ -2,7 +2,6 @@
 const display = document.querySelector('.display');
 const canvas = document.querySelector('.canvas');
 const c = canvas.getContext('2d');
-// canvas.style.border = 'thick solid #000000';
 let image = new Image();
 image.src = 'https://images.freeimages.com/images/large-previews/b3d/flowers-1375316.jpg';
 
@@ -58,7 +57,6 @@ const download = (e) => {
     let canvas2 = document.querySelector('.canvas');
 
     let img = canvas2.toDataURL('image/jpeg');
-    // document.write(`<img src=${img}/>`);
     e.href = img;
 }
 createMeme.addEventListener('click', download, false);
